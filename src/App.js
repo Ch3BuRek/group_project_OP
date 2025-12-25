@@ -22,8 +22,8 @@ function App() {
 
   //загрузка при старті
   useEffect(() => {
-    const fetchCats = fetch('http://localhost:5000/api/cats').then(res => res.json());
-    const fetchLiked = fetch('http://localhost:5000/api/liked').then(res => res.json());
+    const fetchCats = fetch('http://https://group-project-op-backend-1.onrender.com//api/cats').then(res => res.json());
+    const fetchLiked = fetch('http://https://group-project-op-backend-1.onrender.com//api/liked').then(res => res.json());
 
     Promise.all([fetchCats, fetchLiked])
       .then(([catsData, likedData]) => {
@@ -41,7 +41,7 @@ function App() {
     const isAlreadyLiked = liked.find(c => c.id === cat.id);
 
     if (!isAlreadyLiked) {
-      fetch('http://localhost:5000/api/like', {
+      fetch('http://https://group-project-op-backend-1.onrender.com//api/like', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ cat: cat })
@@ -107,5 +107,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
