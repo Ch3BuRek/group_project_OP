@@ -7,7 +7,6 @@ function Chat({ cat }) {
     { from: "bot", text: "Мяу…" }
   ]);
 
-  // 🔒 прихований стан
   const [hiddenState, setHiddenState] = useState({
     affection: 35,
     mood: "neutral"
@@ -53,3 +52,4 @@ function Chat({ cat }) {
 }
 
 export default Chat;
+
