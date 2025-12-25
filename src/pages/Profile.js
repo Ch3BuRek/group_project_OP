@@ -14,7 +14,7 @@ function Profile({ profile, setProfile }) {
 
   const save = () => {
     setProfile(form);
-    alert("Профіль збережено ❤️");
+    alert("профіль збережено");
   };
 
   return (
@@ -33,3 +33,4 @@ function Profile({ profile, setProfile }) {
 }
 
 export default Profile;
+
