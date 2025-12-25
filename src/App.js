@@ -62,7 +62,7 @@ function App() {
     }
   };
 
-  if (loading) return <div className="app"><h2>Завантаження... 🐾</h2></div>;
+  if (loading) return <div className="app"><h2>Завантаження...</h2></div>;
 
   return (
     <div className="app">
@@ -110,3 +110,4 @@ function App() {
 
 
 export default App;
+
