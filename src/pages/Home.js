@@ -5,10 +5,11 @@ function Home({ go }) {
       <h2>Знайди свого кота</h2>
       <p>Твій ідеальний пухнастий компаньйон чекає на перший свайп.</p>
       <button className="cta" onClick={() => go("swipe")}>
-        Почати свайп
+        СВАЙПАЙ!!!
       </button>
     </section>
   );
 }
+
 
 export default Home;
