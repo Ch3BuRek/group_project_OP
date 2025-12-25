@@ -22,8 +22,8 @@ function App() {
 
   //загрузка при старті
   useEffect(() => {
-    const fetchCats = fetch('http://https://group-project-op-backend-1.onrender.com/api/cats').then(res => res.json());
-    const fetchLiked = fetch('http://https://group-project-op-backend-1.onrender.com/api/liked').then(res => res.json());
+    const fetchCats = fetch('https://group-project-op-backend-1.onrender.com/api/cats').then(res => res.json());
+    const fetchLiked = fetch('https://group-project-op-backend-1.onrender.com/api/liked').then(res => res.json());
 
     Promise.all([fetchCats, fetchLiked])
       .then(([catsData, likedData]) => {
@@ -110,5 +110,6 @@ function App() {
 
 
 export default App;
+
 
 
