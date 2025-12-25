@@ -1,4 +1,3 @@
-// src/pages/Swipe.js
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faHeartCrack } from '@fortawesome/free-solid-svg-icons';
 
@@ -43,3 +42,4 @@ function Swipe({ cats, index, setIndex, onLike }) {
 
 
 export default Swipe;
+
