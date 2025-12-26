@@ -1,5 +1,5 @@
 [
-  { "id": 1, "text": "Мяу 😺", "intent": "greeting" },
+  { "id": 1, "text": "Мяу", "intent": "greeting" },
   { "id": 2, "text": "Ти дуже пухнастий", "intent": "compliment" },
   { "id": 3, "text": "Пограємось з клубком?", "intent": "play" },
   { "id": 4, "text": "Що ти любиш їсти?", "intent": "question" },
