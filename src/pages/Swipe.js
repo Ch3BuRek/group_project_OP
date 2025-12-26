@@ -4,8 +4,10 @@ import { faHeart, faHeartCrack } from '@fortawesome/free-solid-svg-icons';
 function Swipe({ cats, index, setIndex, onLike }) {
   const cat = cats[index];
 
+  // Якщо масив порожній (ще вантажиться або помилка) — не показуємо "Кінець"
   if (cats.length === 0) return null; 
 
+  // ПОМИЛКА БУЛА ТУТ: показуємо "Кінець" тільки якщо індекс вийшов за межі завантаженого масиву
   if (!cat) {
     return (
       <div className="empty-state">
@@ -40,6 +42,4 @@ function Swipe({ cats, index, setIndex, onLike }) {
   );
 }
 
-
 export default Swipe;
-
