@@ -1,4 +1,3 @@
-// src/logic/chatLogic.js
 import botPhrases from "../data/botPhrases.json";
 
 function random(arr) {
